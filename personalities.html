@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personalities — Your Name</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="bg-image"></div>
+  <header>
+    <div class="header-inner">
+      <h1 class="site-name"><a href="index.html">Your Name</a></h1>
+      <p class="tagline">writer · learner · observer</p>
+    </div>
+  </header>
+  <nav id="main-nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="reading.html">Reading</a>
+    <a href="weekly.html">Weekly Log</a>
+    <a href="articles.html">Articles</a>
+    <a href="newspaper.html">Newspaper</a>
+    <a href="personalities.html" class="active">Personalities</a>
+    <a href="thoughts.html">Thoughts & Questions</a>
+    <a href="daylife.html">Day in Life</a>
+    <a href="work.html">Work & Learning</a>
+    <a href="writings.html">Writings</a>
+    <a href="resume.html">Resume</a>
+  </nav>
+  <main class="container">
+    <h2>Personalities</h2>
+    <p style="color:var(--muted);margin-bottom:2rem;">People who inspire me — their ideas, their lives, what they teach me.</p>
+
+    <div class="personality-card">
+      <!-- <img src="images/feynman.jpg" alt="Richard Feynman" /> -->
+      <div style="width:80px;height:80px;border-radius:50%;background:#f0ece6;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:1.5rem;border:2px solid var(--border);">RF</div>
+      <div class="info">
+        <h4>Richard Feynman</h4>
+        <p style="font-family:var(--font-mono);font-size:0.7rem;color:var(--muted);">Physicist · 1918–1988</p>
+        <p>
+          He made physics feel like play. His lectures still feel alive decades later. 
+          What I love most: he never pretended to understand something he didn't. 
+          "I would rather have questions that can't be answered than answers that can't be questioned."
+        </p>
+        <p style="font-size:0.88rem;color:var(--muted);">Why he inspires me: his curiosity was never performative. It was genuine, childlike, relentless.</p>
+      </div>
+    </div>
+
+    <div class="personality-card">
+      <div style="width:80px;height:80px;border-radius:50%;background:#f0ece6;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:1.5rem;border:2px solid var(--border);">DR</div>
+      <div class="info">
+        <h4>Dr. B.R. Ambedkar</h4>
+        <p style="font-family:var(--font-mono);font-size:0.7rem;color:var(--muted);">Jurist, Economist, Social Reformer · 1891–1956</p>
+        <p>
+          The most educated Indian of his time, and the most ignored in his lifetime. 
+          He believed education was the only real liberation. He read more than almost 
+          anyone I know of — his personal library had over 50,000 books.
+        </p>
+        <p style="font-size:0.88rem;color:var(--muted);">Why he inspires me: he never let the world's opinion of him limit his opinion of himself.</p>
+      </div>
+    </div>
+
+    <!-- 
+    HOW TO ADD A NEW PERSONALITY:
+    1. Copy the card block above
+    2. Replace the initials, name, dates, and description
+    3. If you have a photo: add it to images/ folder and replace the initials div with:
+       <img src="images/their-name.jpg" alt="Their Name" />
+    -->
+
+  </main>
+  <footer>
+    <p>Made with care · Hosted on GitHub Pages · <a href="mailto:you@email.com">you@email.com</a></p>
+  </footer>
+</body>
+</html>

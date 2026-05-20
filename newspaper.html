@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Newspaper — Your Name</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="bg-image"></div>
+  <header>
+    <div class="header-inner">
+      <h1 class="site-name"><a href="index.html">Your Name</a></h1>
+      <p class="tagline">writer · learner · observer</p>
+    </div>
+  </header>
+  <nav id="main-nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="reading.html">Reading</a>
+    <a href="weekly.html">Weekly Log</a>
+    <a href="articles.html">Articles</a>
+    <a href="newspaper.html" class="active">Newspaper</a>
+    <a href="personalities.html">Personalities</a>
+    <a href="thoughts.html">Thoughts & Questions</a>
+    <a href="daylife.html">Day in Life</a>
+    <a href="work.html">Work & Learning</a>
+    <a href="writings.html">Writings</a>
+    <a href="resume.html">Resume</a>
+  </nav>
+  <main class="container">
+    <h2>Newspaper</h2>
+    <p style="color:var(--muted);margin-bottom:2rem;">News I'm following. Clippings. Scans of pages that made me think.</p>
+
+    <div style="margin-bottom:3rem;">
+      <h3>India's space program reaches new milestone</h3>
+      <p style="font-family:var(--font-mono);font-size:0.72rem;color:var(--muted);margin-bottom:1rem;">May 15, 2026 · The Hindu</p>
+
+      <p>
+        ISRO launched its next mission today. What strikes me isn't just the technical achievement — 
+        it's that this is happening at a fraction of the cost of comparable missions elsewhere.
+        Frugal engineering is genuinely India's competitive advantage in space.
+      </p>
+
+      <!-- If you have a newspaper image, add it like this: -->
+      <!-- <img src="images/newspaper-may15.jpg" alt="Newspaper clipping May 15" class="newspaper-img" /> -->
+
+      <p style="font-size:0.88rem;color:var(--muted);">
+        My thought: We talk about software startups but rarely about deep-tech. 
+        ISRO is doing deep-tech at scale, quietly, every year.
+      </p>
+    </div>
+
+    <hr style="border:none;border-top:1px solid var(--border);margin-bottom:3rem;" />
+
+    <div style="margin-bottom:3rem;">
+      <h3>News clipping — Education policy changes</h3>
+      <p style="font-family:var(--font-mono);font-size:0.72rem;color:var(--muted);margin-bottom:1rem;">May 5, 2026 · Times of India</p>
+
+      <!-- Uncomment and update the path when you add your image: -->
+      <!-- <img src="images/newspaper-may5.jpg" alt="Education news clipping" class="newspaper-img" /> -->
+
+      <p>Paste or type the article summary here, or just keep the image and add your reaction below.</p>
+
+      <p style="font-size:0.88rem;color:var(--muted);">My reaction: ...</p>
+    </div>
+
+    <!-- 
+    HOW TO ADD A NEWSPAPER ENTRY WITH IMAGE:
+    1. Take a photo of the newspaper page
+    2. Copy it into the images/ folder: cp ~/Downloads/photo.jpg images/newspaper-date.jpg
+    3. Add this block:
+
+    <div style="margin-bottom:3rem;">
+      <h3>Headline you want to save</h3>
+      <p style="font-family:var(--font-mono);font-size:0.72rem;color:var(--muted);margin-bottom:1rem;">DATE · Source</p>
+      <img src="images/newspaper-date.jpg" alt="description" class="newspaper-img" />
+      <p>Your thoughts about this news.</p>
+    </div>
+    -->
+
+  </main>
+  <footer>
+    <p>Made with care · Hosted on GitHub Pages · <a href="mailto:you@email.com">you@email.com</a></p>
+  </footer>
+</body>
+</html>
