@@ -1,87 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Work & Learning — Your Name</title>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Work & Learning — Jayesh</title>
   <link rel="stylesheet" href="css/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <div class="bg-image"></div>
-  <header>
-    <div class="header-inner">
-      <h1 class="site-name"><a href="index.html">Your Name</a></h1>
-      <p class="tagline">writer · learner · observer</p>
-    </div>
+  <div class="site-bg"></div>
+  <div class="portrait-float"><img src="images/me.jpg" alt="" /></div>
+
+  <header class="topbar">
+    <div class="topbar-name"><span>J</span>ayesh</div>
+    <nav class="topbar-nav">
+      <a href="index.html">home</a>
+      <a href="reading.html">reading</a>
+      <a href="weekly.html">weekly</a>
+      <a href="personalities.html">people</a>
+      <a href="thoughts.html">thoughts</a>
+      <a href="work.html" class="active">work</a>
+      <a href="writings.html">writings</a>
+      <a href="resume.html">resume</a>
+    </nav>
   </header>
-  <nav id="main-nav">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="reading.html">Reading</a>
-    <a href="weekly.html">Weekly Log</a>
-    <a href="articles.html">Articles</a>
-    <a href="newspaper.html">Newspaper</a>
-    <a href="personalities.html">Personalities</a>
-    <a href="thoughts.html">Thoughts & Questions</a>
-    <a href="daylife.html">Day in Life</a>
-    <a href="work.html" class="active">Work & Learning</a>
-    <a href="writings.html">Writings</a>
-    <a href="resume.html">Resume</a>
-  </nav>
-  <main class="container">
+
+  <div class="page-header">
     <h2>Work & Learning</h2>
-    <p style="color:var(--muted);margin-bottom:2rem;">What I'm building, what I'm learning, what I'm figuring out at work.</p>
+    <p>What I'm building, learning, and figuring out.</p>
+  </div>
 
-    <div style="margin-bottom:3rem;">
-      <h3>Finally understood Docker</h3>
-      <p style="font-family:var(--font-mono);font-size:0.72rem;color:var(--muted);margin-bottom:1rem;">May 8, 2026</p>
+  <main class="container">
 
-      <p>
-        I've used Docker for months but never really understood it. This week it clicked. 
-        The key insight: a container is just a process with a restricted view of the system. 
-        It's not a virtual machine. It's not magic. It's isolation.
-      </p>
+    <div class="post-body">
+      <h1>Finally understood Docker</h1>
+      <div class="post-meta"><span>May 8, 2026</span><span>Work</span></div>
+
+      <p>I've used Docker for months but never really understood it. This week it clicked. The key insight: a container is just a process with a restricted view of the system. It's not a virtual machine. It's not magic. It's isolation.</p>
 
       <p><strong>What I actually learned:</strong></p>
-      <ul style="padding-left:1.5rem;margin-bottom:1rem;color:#333;">
-        <li>Difference between an image and a container</li>
-        <li>How volumes persist data outside the container lifecycle</li>
-        <li>Why docker-compose makes multi-service setups manageable</li>
-        <li>The mental model: containers are cattle, not pets</li>
+      <ul style="padding-left:1.5rem;margin-bottom:1.2rem;">
+        <li style="color:#8a8478;font-size:0.92rem;margin-bottom:0.3rem;">Difference between an image and a container</li>
+        <li style="color:#8a8478;font-size:0.92rem;margin-bottom:0.3rem;">How volumes persist data outside the container lifecycle</li>
+        <li style="color:#8a8478;font-size:0.92rem;margin-bottom:0.3rem;">Why docker-compose makes multi-service setups manageable</li>
+        <li style="color:#8a8478;font-size:0.92rem;">The mental model: containers are cattle, not pets</li>
       </ul>
 
-      <p><strong>What I built:</strong> A simple 3-container app — a Python API, a Postgres DB, and an nginx proxy — all connected with docker-compose. It actually worked first try (after 6 failed tries).</p>
+      <p><strong>What I built:</strong> A 3-container app — Python API, Postgres DB, nginx proxy — all connected with docker-compose. It worked first try (after 6 failed tries).</p>
 
       <p><strong>What I still want to learn:</strong> Kubernetes. Someday. Not today.</p>
     </div>
 
-    <hr style="border:none;border-top:1px solid var(--border);margin-bottom:3rem;" />
+    <hr style="border:none;border-top:1px solid var(--border);margin:3rem 0;" />
 
-    <div style="margin-bottom:3rem;">
-      <h3>Git rebase vs merge — it finally makes sense</h3>
-      <p style="font-family:var(--font-mono);font-size:0.72rem;color:var(--muted);margin-bottom:1rem;">May 3, 2026</p>
+    <div class="post-body">
+      <h1>Git rebase vs merge — it finally makes sense</h1>
+      <div class="post-meta"><span>May 3, 2026</span><span>Work</span></div>
 
-      <p>
-        Merge keeps history as-is, with a merge commit. Rebase rewrites history to look linear. 
-        Neither is wrong — it depends on what story you want your git log to tell.
-      </p>
+      <p>Merge keeps history as-is, with a merge commit. Rebase rewrites history to look linear. Neither is wrong — it depends on what story you want your git log to tell.</p>
 
-      <p>
-        Our team uses rebase for feature branches, merge for releases. 
-        Now that I understand why, I stop being scared of it.
-      </p>
+      <p>Our team uses rebase for feature branches, merge for releases. Now that I understand why, I've stopped being scared of it.</p>
     </div>
 
-    <!-- 
-    HOW TO ADD A NEW WORK/LEARNING ENTRY:
-    Copy a block above, paste at top, update title, date, and write what you learned.
-    Be specific — "learned X" is less useful than "here's what clicked about X".
-    -->
-
   </main>
+
   <footer>
-    <p>Made with care · Hosted on GitHub Pages · <a href="mailto:you@email.com">you@email.com</a></p>
+    <span class="foot-name">Jayesh</span>
+    <div class="foot-links">
+      <a href="https://github.com/Jayesh251" target="_blank">github</a>
+      <a href="mailto:your@email.com">email</a>
+    </div>
   </footer>
 </body>
 </html>

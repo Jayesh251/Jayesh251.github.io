@@ -1,101 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Resume — Your Name</title>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume — Jayesh</title>
   <link rel="stylesheet" href="css/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <div class="bg-image"></div>
-  <header>
-    <div class="header-inner">
-      <h1 class="site-name"><a href="index.html">Your Name</a></h1>
-      <p class="tagline">writer · learner · observer</p>
-    </div>
-  </header>
-  <nav id="main-nav">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="reading.html">Reading</a>
-    <a href="weekly.html">Weekly Log</a>
-    <a href="articles.html">Articles</a>
-    <a href="newspaper.html">Newspaper</a>
-    <a href="personalities.html">Personalities</a>
-    <a href="thoughts.html">Thoughts & Questions</a>
-    <a href="daylife.html">Day in Life</a>
-    <a href="work.html">Work & Learning</a>
-    <a href="writings.html">Writings</a>
-    <a href="resume.html" class="active">Resume</a>
-  </nav>
-  <main class="container">
+  <div class="site-bg"></div>
+  <div class="portrait-float"><img src="images/me.jpg" alt="" /></div>
 
-    <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:0.5rem;">
-      <h2>Resume</h2>
-      <!-- Optional: link to PDF version -->
-      <!-- <a href="files/resume.pdf" style="font-family:var(--font-mono);font-size:0.75rem;">Download PDF ↓</a> -->
-    </div>
-    <p style="color:var(--muted);margin-bottom:2.5rem;">
-      <a href="mailto:you@email.com">you@email.com</a> · 
-      <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a> · 
+  <header class="topbar">
+    <div class="topbar-name"><span>J</span>ayesh</div>
+    <nav class="topbar-nav">
+      <a href="index.html">home</a>
+      <a href="reading.html">reading</a>
+      <a href="weekly.html">weekly</a>
+      <a href="personalities.html">people</a>
+      <a href="thoughts.html">thoughts</a>
+      <a href="work.html">work</a>
+      <a href="writings.html">writings</a>
+      <a href="resume.html" class="active">resume</a>
+    </nav>
+  </header>
+
+  <div class="page-header">
+    <h2>Resume</h2>
+    <p>
+      <a href="mailto:your@email.com">your@email.com</a> ·
+      <a href="https://github.com/Jayesh251" target="_blank">github.com/Jayesh251</a> ·
       Your City, India
     </p>
+  </div>
 
-    <div class="resume-section">
+  <main class="container">
+
+    <div class="resume-block">
       <h3>Experience</h3>
 
-      <div class="resume-item">
-        <div class="role">Software Engineer</div>
-        <div class="org">Company Name</div>
+      <div class="job">
+        <div class="title">Software Engineer</div>
+        <div class="company">Company Name</div>
         <div class="period">Jan 2024 – Present · City</div>
-        <ul style="margin-top:0.5rem;padding-left:1.5rem;color:#333;font-size:0.92rem;">
+        <ul>
           <li>Built and maintained REST APIs handling X requests/day</li>
           <li>Led migration from monolith to microservices for the billing module</li>
           <li>Wrote internal docs that reduced onboarding time by 40%</li>
         </ul>
       </div>
 
-      <div class="resume-item">
-        <div class="role">Junior Developer</div>
-        <div class="org">Previous Company</div>
+      <div class="job">
+        <div class="title">Junior Developer</div>
+        <div class="company">Previous Company</div>
         <div class="period">Jun 2022 – Dec 2023 · City</div>
-        <ul style="margin-top:0.5rem;padding-left:1.5rem;color:#333;font-size:0.92rem;">
+        <ul>
           <li>Worked on frontend features using React</li>
           <li>Fixed more bugs than I introduced (eventually)</li>
         </ul>
       </div>
     </div>
 
-    <div class="resume-section">
+    <div class="resume-block">
       <h3>Education</h3>
-      <div class="resume-item">
-        <div class="role">B.Tech in Computer Science</div>
-        <div class="org">Your College / University</div>
+      <div class="job">
+        <div class="title">B.Tech in Computer Science</div>
+        <div class="company">Your College / University</div>
         <div class="period">2018 – 2022</div>
       </div>
     </div>
 
-    <div class="resume-section">
+    <div class="resume-block">
       <h3>Skills</h3>
-      <p>Python · JavaScript · React · SQL · Docker · Linux · Git</p>
+      <p style="color:#8a8478;">Python · JavaScript · React · SQL · Docker · Linux · Git</p>
     </div>
 
-    <div class="resume-section">
+    <div class="resume-block">
       <h3>Projects</h3>
-      <div class="resume-item">
-        <div class="role">This website</div>
-        <p style="font-size:0.9rem;">Built from scratch with plain HTML, CSS, and no frameworks. Hosted on GitHub Pages.</p>
+      <div class="job">
+        <div class="title">This website</div>
+        <p style="font-size:0.88rem;color:#8a8478;margin-top:0.3rem;">Built from scratch with plain HTML & CSS. Hosted on GitHub Pages at Jayesh251.github.io</p>
       </div>
     </div>
 
-    <!-- OPTIONAL: link to actual PDF resume in the files/ folder -->
-    <!-- Put your resume PDF as: files/resume.pdf -->
-    <!-- Then uncomment: <p><a href="files/resume.pdf">Download full resume as PDF →</a></p> -->
-
   </main>
+
   <footer>
-    <p>Made with care · Hosted on GitHub Pages · <a href="mailto:you@email.com">you@email.com</a></p>
+    <span class="foot-name">Jayesh</span>
+    <div class="foot-links">
+      <a href="https://github.com/Jayesh251" target="_blank">github</a>
+      <a href="mailto:your@email.com">email</a>
+    </div>
   </footer>
 </body>
 </html>
